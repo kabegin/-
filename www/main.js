@@ -1,15 +1,10 @@
 // This is a JavaScript file
-function start(){
-    for(var i=1;i<=3;i++){
-        document.getElementById('msg'+i).style.zIndex=1;
-    }
+function doClick(){
+   var data=new Date();
+   var n=document.getElementById('text1').value;
+   var time=data.getTime();
+   var result=time+(60*60*24*1000)*n;
+   var data2=new Date(result);
+   document.getElementById('msg').textContent=data2.toLocaleDateString();
 }
-function change(target){
-    var num=target.style.zIndex;
-    for(var i=1;i<=3;i++){
-        var obj=document.getElementById('msg'+i).style;
-        var n=obj.display='block';
-        
-    }
-    target.style.display='none';
-}
+

@@ -5,13 +5,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="main.js"></script>
    </head>
-<body onload="start();">
+<body>
 <h1>MyApp</h1>
-<div class="sample1" id="msg1"
-    onclick="change(this);">This is CSS Sample.</div>
-<div class="sample2" id="msg2"
-    onclick="change(this);">This is CSS Sample.</div>
-<div class="sample3" id="msg3"
-    onclick="change(this);">This is CSS Sample.</div>
+<p id="msg">※サンプルメッセージ</p>
+<form onsubmit="return false;">
+    日数:<input type="text" id="text1">
+    <input type="button" value="Click" onclick="doClick();">
+</form>
 </body>
 </html>
